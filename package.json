@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/strided-base-zmap",
+  "version": "0.0.0",
+  "description": "Apply a unary function to a double-precision complex floating-point strided input array and assign results to a double-precision complex floating-point strided output array.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/strided-base-zmap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "strided",
+    "base",
+    "array",
+    "ndarray",
+    "unary",
+    "apply",
+    "foreach",
+    "map",
+    "transform",
+    "float64",
+    "double",
+    "double-precision",
+    "dbl",
+    "complex",
+    "cmplx"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
