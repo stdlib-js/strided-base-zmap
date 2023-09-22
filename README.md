@@ -48,13 +48,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/strided-base-zmap/tags). For example,
+
+```javascript
 import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@v0.1.0-esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@esm/index.mjs';
 ```
 
 #### zmap( N, x, strideX, y, strideY, fcn )
@@ -223,7 +228,7 @@ import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by
 import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@esm/index.mjs';
 import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@esm/index.mjs';
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
-import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@v0.1.0-esm/index.mjs';
+import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@esm/index.mjs';
 
 function scale( x ) {
     var re = real( x );
