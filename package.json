@@ -51,7 +51,7 @@
     "@stdlib/complex-float64": "^0.1.0",
     "@stdlib/complex-imag": "^0.1.0",
     "@stdlib/complex-real": "^0.1.0",
-    "@stdlib/math-base-assert-is-nan": "^0.1.0",
+    "@stdlib/math-base-assert-is-nan": "^0.1.1",
     "@stdlib/math-base-special-cidentity": "^0.1.0",
     "@stdlib/math-base-special-pow": "^0.1.0",
     "@stdlib/random-base-discrete-uniform": "^0.1.0",
