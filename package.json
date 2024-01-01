@@ -47,7 +47,6 @@
     "@stdlib/array-complex128": "^0.1.0",
     "@stdlib/array-filled-by": "^0.1.0",
     "@stdlib/array-float64": "^0.1.1",
-    "@stdlib/bench": "^0.2.1",
     "@stdlib/complex-float64": "^0.1.1",
     "@stdlib/complex-imag": "^0.1.1",
     "@stdlib/complex-real": "^0.1.1",
@@ -58,7 +57,8 @@
     "@stdlib/random-base-uniform": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.1.2"
   },
   "engines": {
     "node": ">=0.10.0",
