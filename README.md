@@ -41,20 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/strided-base-zmap
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@deno/mod.js';
+var zmap = require( '@stdlib/strided-base-zmap' );
 ```
 
 #### zmap( N, x, strideX, y, strideY, fcn )
@@ -62,10 +74,10 @@ import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap
 Applies a unary function to a double-precision complex floating-point strided input array and assigns results to a double-precision complex floating-point strided output array.
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+var Complex128Array = require( '@stdlib/array-complex128' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex128Array( x.length );
@@ -94,10 +106,10 @@ The function accepts the following arguments:
 The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to index every other value in `x` and to index the first `N` elements of `y` in reverse order,
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+var Complex128Array = require( '@stdlib/array-complex128' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex128Array( x.length );
@@ -117,10 +129,10 @@ var im = imag( v );
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][@stdlib/array/complex128] views.
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+var Complex128Array = require( '@stdlib/array-complex128' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var cceil = require( '@stdlib/math-base-special-cceil' );
 
 // Initial arrays...
 var x0 = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -147,10 +159,10 @@ var im = imag( v );
 Applies a unary function to a double-precision complex floating-point strided input array and assigns results to a double-precision complex floating-point strided output array using alternative indexing semantics.
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+var Complex128Array = require( '@stdlib/array-complex128' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex128Array( x.length );
@@ -175,10 +187,10 @@ The function accepts the following additional arguments:
 While [`typed array`][@stdlib/array/complex128] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to index every other value in `x` starting from the second value and to index the last `N` elements in `y` in reverse order,
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+var Complex128Array = require( '@stdlib/array-complex128' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex128Array( x.length );
@@ -212,13 +224,13 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
-import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
-import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@deno/mod.js';
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+var Complex128Array = require( '@stdlib/array-complex128' );
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
+var Complex128 = require( '@stdlib/complex-float64' );
+var zmap = require( '@stdlib/strided-base-zmap' );
 
 function scale( x ) {
     var re = real( x );
@@ -243,7 +255,128 @@ console.log( y );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/strided/base/zmap.h"
+```
+
+#### stdlib_strided_zmap( N, \*X, strideX, \*Y, strideY, fcn )
+
+Applies a unary function to a double-precision complex floating-point strided input array and assigns results to a double-precision complex floating-point strided output array.
+
+```c
+#include <stdint.h>
+#include <complex.h>
+
+static double complex scale( const double complex x ) {
+    double re = creal( x );
+    double im = cimag( x );
+    return ( re+10.0 ) + ( im+10.0 )*I;
+}
+
+double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
+double complex Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+int64_t N = 6;
+
+stdlib_strided_zmap( N, X, 1, Y, 1, scale );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] int64_t` number of indexed elements.
+-   **X**: `[in] double complex*` input array.
+-   **strideX** `[in] int64_t` index increment for `X`.
+-   **Y**: `[out] double complex*` output array.
+-   **strideY**: `[in] int64_t` index increment for `Y`.
+-   **fcn**: `[in] double complex (*fcn)( double complex )` unary function to apply.
+
+```c
+void stdlib_strided_zmap( const int64_t N, const double complex *X, const int64_t strideX, double complex *Y, const int64_t strideY, double complex (*fcn)( double complex ) );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/strided/base/zmap.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <complex.h>
+
+// Define a callback:
+static double complex scale( const double complex x ) {
+    double re = creal( x );
+    double im = cimag( x );
+    return ( re+10.0 ) + ( im+10.0 )*I;
+}
+
+int main( void ) {
+    // Create an input strided array:
+    double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
+
+    // Create an output strided array:
+    double complex Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+    // Specify the number of elements:
+    int64_t N = 6;
+
+    // Define the strides:
+    int64_t strideX = 1;
+    int64_t strideY = -1;
+
+    // Apply the callback:
+    stdlib_strided_zmap( N, X, strideX, Y, strideY, scale );
+
+    // Print the results:
+    for ( int64_t i = 0; i < N; i++ ) {
+        printf( "Y[ %"PRId64" ] = %lf + %lfi\n", i, creal( Y[i] ), cimag( Y[i] ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -269,7 +402,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -323,19 +456,22 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/strided-base-zmap/tree/deno
+[deno-readme]: https://github.com/stdlib-js/strided-base-zmap/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/strided-base-zmap/tree/umd
+[umd-readme]: https://github.com/stdlib-js/strided-base-zmap/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/strided-base-zmap/tree/esm
+[esm-readme]: https://github.com/stdlib-js/strided-base-zmap/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/strided-base-zmap/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/strided-base-zmap/main/LICENSE
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/deno
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 <!-- <related-links> -->
 
-[@stdlib/strided/base/cmap]: https://github.com/stdlib-js/strided-base-cmap/tree/deno
+[@stdlib/strided/base/cmap]: https://github.com/stdlib-js/strided-base-cmap
 
-[@stdlib/strided/base/unary]: https://github.com/stdlib-js/strided-base-unary/tree/deno
+[@stdlib/strided/base/unary]: https://github.com/stdlib-js/strided-base-unary
 
 <!-- </related-links> -->
 
