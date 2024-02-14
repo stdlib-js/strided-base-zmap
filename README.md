@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@esm/index.mjs';
+import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@v0.2.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@v0.2.0-esm/index.mjs';
 ```
 
 #### zmap( N, x, strideX, y, strideY, fcn )
@@ -223,7 +223,7 @@ import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by
 import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@esm/index.mjs';
 import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@esm/index.mjs';
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
-import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@esm/index.mjs';
+import zmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-zmap@v0.2.0-esm/index.mjs';
 
 function scale( x ) {
     var re = real( x );
