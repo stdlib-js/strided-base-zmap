@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided-base-zmap",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Apply a unary function to a double-precision complex floating-point strided input array and assign results to a double-precision complex floating-point strided output array.",
   "license": "Apache-2.0",
   "author": {
@@ -39,9 +39,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/types": "^0.2.0",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1",
-    "@stdlib/utils-library-manifest": "^0.1.1"
+    "@stdlib/types": "^0.3.1",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.0",
+    "@stdlib/utils-library-manifest": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/array-complex128": "^0.1.0",
