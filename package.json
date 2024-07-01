@@ -47,7 +47,7 @@
     "@stdlib/array-complex128": "^0.2.1",
     "@stdlib/array-filled-by": "^0.2.1",
     "@stdlib/array-float64": "^0.2.1",
-    "@stdlib/complex-float64-ctor": "github:stdlib-js/complex-float64-ctor#main",
+    "@stdlib/complex-float64-ctor": "^0.0.1",
     "@stdlib/complex-imag": "^0.2.1",
     "@stdlib/complex-real": "^0.2.1",
     "@stdlib/math-base-assert-is-nan": "^0.2.1",
