@@ -75,8 +75,8 @@ Applies a unary function to a double-precision complex floating-point strided in
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -107,8 +107,8 @@ The `N` and stride parameters determine which elements in the strided arrays are
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -130,8 +130,8 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 var cceil = require( '@stdlib/math-base-special-cceil' );
 
 // Initial arrays...
@@ -160,8 +160,8 @@ Applies a unary function to a double-precision complex floating-point strided in
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -188,8 +188,8 @@ While [`typed array`][@stdlib/array/complex128] views mandate a view offset base
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var x = new Complex128Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -227,8 +227,8 @@ var im = imag( v );
 var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
 var Complex128Array = require( '@stdlib/array-complex128' );
 var filledarrayBy = require( '@stdlib/array-filled-by' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 var Complex128 = require( '@stdlib/complex-float64-ctor' );
 var zmap = require( '@stdlib/strided-base-zmap' );
 
@@ -432,8 +432,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/strided-base-zmap.svg
 [npm-url]: https://npmjs.org/package/@stdlib/strided-base-zmap
 
-[test-image]: https://github.com/stdlib-js/strided-base-zmap/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/strided-base-zmap/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/strided-base-zmap/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/strided-base-zmap/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/strided-base-zmap/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/strided-base-zmap?branch=main

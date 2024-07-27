@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided-base-zmap",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Apply a unary function to a double-precision complex floating-point strided input array and assign results to a double-precision complex floating-point strided output array.",
   "license": "Apache-2.0",
   "author": {
@@ -39,9 +39,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/strided-base-stride2offset": "github:stdlib-js/strided-base-stride2offset#main",
+    "@stdlib/strided-base-stride2offset": "^0.1.0",
     "@stdlib/types": "^0.3.2",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.1"
   },
   "devDependencies": {
@@ -49,8 +49,8 @@
     "@stdlib/array-filled-by": "^0.2.1",
     "@stdlib/array-float64": "^0.2.1",
     "@stdlib/complex-float64-ctor": "^0.0.1",
-    "@stdlib/complex-imag": "^0.2.1",
-    "@stdlib/complex-real": "^0.2.1",
+    "@stdlib/complex-float64-imag": "^0.1.0",
+    "@stdlib/complex-float64-real": "^0.1.0",
     "@stdlib/math-base-assert-is-nan": "^0.2.1",
     "@stdlib/math-base-special-cidentity": "^0.2.1",
     "@stdlib/math-base-special-pow": "^0.2.1",
