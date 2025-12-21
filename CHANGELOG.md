@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-08)
+## Unreleased (2025-12-21)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`062b80e`](https://github.com/stdlib-js/stdlib/commit/062b80e7488175ea48118c3873ea4717e7e3f702) - **docs:** improve doctests for complex number instances in `strided/base/zmap` [(#9044)](https://github.com/stdlib-js/stdlib/pull/9044) _(by Prajjwal Bajpai)_
 -   [`504a3f1`](https://github.com/stdlib-js/stdlib/commit/504a3f1d1db20b670b48efd1c292d7efbb433b58) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`bb44973`](https://github.com/stdlib-js/stdlib/commit/bb44973cb0acb335d968060dd427ad47fd3ed2dc) - **chore:** fix C lint error [(#6529)](https://github.com/stdlib-js/stdlib/pull/6529) _(by Anshu Kumar)_
 -   [`74826d6`](https://github.com/stdlib-js/stdlib/commit/74826d6d9c5c800da64c3a9821a511fef2fd0a67) - **refactor:** update paths _(by Gururaj Gurram)_
@@ -40,12 +41,13 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Anshu Kumar
 -   Athan Reines
 -   Gururaj Gurram
 -   Philipp Burckhardt
+-   Prajjwal Bajpai
 
 </section>
 
