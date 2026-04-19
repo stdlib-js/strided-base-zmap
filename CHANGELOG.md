@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-12)
+## Unreleased (2026-04-19)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`4ef4f29`](https://github.com/stdlib-js/stdlib/commit/4ef4f293d6a8855f8c156de4ce6ba114d915ac2c) - **bench:** refactor to use dynamic memory allocation in `strided/base/zmap` [(#11568)](https://github.com/stdlib-js/stdlib/pull/11568) _(by Karan Anand)_
 -   [`3fce7ca`](https://github.com/stdlib-js/stdlib/commit/3fce7cabbff413b740fab27fa38db053445905ec) - **chore:** fix C lint errors [(#11236)](https://github.com/stdlib-js/stdlib/pull/11236) _(by Geo Daoyu)_
 
 </details>
@@ -36,9 +37,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Geo Daoyu
+-   Karan Anand
 
 </section>
 
