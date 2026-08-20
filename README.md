@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Apply a unary function to a double-precision floating-point strided input array and assign results to a double-precision floating-point strided output array.
+> Apply a unary function to a double-precision complex floating-point strided input array and assign results to a double-precision complex floating-point strided output array.
 
 <section class="intro">
 
